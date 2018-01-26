@@ -1,10 +1,14 @@
 <h3>Home Component</h3>
 <p>Welcome to Angular Seed</p>
 <div class="container">
-<form #form="ngForm" novalidate>
+<form #form="ngForm" >
     <div class="form-group">
         <label>First Name</label>
-    <input type="text" class="form-control" placeholder="Name" name="firstName" ngModel>
+    <input type="text" class="form-control" required placeholder="First Name" name="firstName" ngModel>
+</div>
+<div class="form-group">
+        <label>Last Name</label>
+    <input type="text" class="form-control" required placeholder="Last Name" name="lastName" ngModel>
 </div>
     <button class="btn btn-primary" type="submit">Ok</button>
 </form>

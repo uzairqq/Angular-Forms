@@ -1,7 +1,6 @@
-<h3>Home Component</h3>
-<p>Welcome to Angular Seed</p>
+<h3>Employee Form</h3>
 <div class="container">
-<form #form="ngForm" >
+<form #form="ngForm" novalidate>
     <div class="form-group">
         <label>First Name</label>
     <input type="text" class="form-control" required placeholder="First Name" name="firstName" ngModel>
@@ -11,5 +10,11 @@
     <input type="text" class="form-control" required placeholder="Last Name" name="lastName" ngModel>
 </div>
     <button class="btn btn-primary" type="submit">Ok</button>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" name="is-full-time" ngModel> Full Time Employee
+        </label>
+    </div>
 </form>
 </div>

@@ -8,7 +8,7 @@ import { Employee } from '../models/employee.model';
 })
 export class HomeComponent {
   languages=['English','Spanish','Hindi','Urdu'];
-  model=new Employee('uzair','laraib',true,"w2");
+  model=new Employee('uzair','laraib',true,"w2",'English');
 
   
 

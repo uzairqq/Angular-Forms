@@ -1,8 +1,9 @@
 <h3>Employee Form</h3>
 <div class="container">
 <form #form="ngForm" novalidate>
-    <div class="form-group">
-        <label>First Name</label>
+    
+    <div class="form-group" [class.has-error]="firstName.invalid && firstName.touched">
+    <label class="control-label">First Name</label>
     <input #firstName="ngModel" type="text" class="form-control" required placeholder="First Name" name="firstName" 
     [(ngModel)]="model.firstName">
     <div *ngIf="firstName.invalid && firstName.touched" class="alert alert-danger">

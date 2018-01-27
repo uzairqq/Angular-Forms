@@ -5,11 +5,11 @@
         <label>First Name</label>
     <input #firstName="ngModel" type="text" class="form-control" required placeholder="First Name" name="firstName" 
     [(ngModel)]="model.firstName">
+    <div *ngIf="firstName.invalid && firstName.touched" class="alert alert-danger">
+First Name Is Required
+        </div>
 </div>
-Classes 
-<h4>{{firstName.dirty}}</h4>
-<h4>{{firstName.invalid}}</h4>
-<h4>{{firstName.pristine}}</h4>
+
 
  <!-- <div class="form-group">
         <label>Last Name</label>

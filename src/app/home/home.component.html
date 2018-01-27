@@ -4,7 +4,8 @@
     <div class="form-group">
         <label>First Name</label>
     <input type="text" class="form-control" required placeholder="First Name" name="firstName" 
-    [(ngModel)]='model.firstName'>
+    [ngModel]="firstName"
+    (ngModelChange)="firstNameToUpperCase($event)">
 </div>
 <button class="btn btn-primary" type="submit">Ok</button>
 <!-- <div class="form-group">

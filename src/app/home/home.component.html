@@ -3,11 +3,13 @@
 <form #form="ngForm" novalidate>
     <div class="form-group">
         <label>First Name</label>
-    <input #firstName type="text" class="form-control" required placeholder="First Name" name="firstName" 
+    <input #firstName="ngModel" type="text" class="form-control" required placeholder="First Name" name="firstName" 
     [(ngModel)]="model.firstName">
 </div>
 Classes 
-<h4>{{firstName.className}}</h4>
+<h4>{{firstName.dirty}}</h4>
+<h4>{{firstName.invalid}}</h4>
+<h4>{{firstName.pristine}}</h4>
 
  <!-- <div class="form-group">
         <label>Last Name</label>

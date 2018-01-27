@@ -4,21 +4,21 @@
     <div class="form-group">
         <label>First Name</label>
     <input type="text" class="form-control" required placeholder="First Name" name="firstName" 
-    [ngModel]="firstName"
-    (ngModelChange)="firstNameToUpperCase($event)">
+    [(ngModel)]="model.firstName">
+</div>
+ <div class="form-group">
+        <label>Last Name</label>
+    <input type="text" class="form-control" required placeholder="Last Name" name="lastName" 
+    [(ngModel)]="model.lastName">
 </div>
 <button class="btn btn-primary" type="submit">Ok</button>
-<!-- <div class="form-group">
-        <label>Last Name</label>
-    <input type="text" class="form-control" required placeholder="Last Name" name="lastName" ngModel>
-</div>
-    
-
     <div class="checkbox">
         <label>
-            <input type="checkbox" name="is-full-time" ngModel> Full Time Employee
+            <input type="checkbox" name="is-full-time"
+            [(ngModel)]="isFullTime"> Full Time Employee
         </label>
     </div>
+    <!--
     <label>Payment Type</label>
     <div class="radio">
         <label>

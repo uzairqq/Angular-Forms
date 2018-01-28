@@ -13,7 +13,7 @@ export class HomeComponent {
   model=new Employee('uzair','laraib',true,"w2",'default');
   hasPrimaryLanguageError=false;
 
-  constructor(private formPoster:Form){
+  constructor(private formPoster:FormPoster){
     
   }
 

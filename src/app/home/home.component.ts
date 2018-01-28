@@ -12,9 +12,9 @@ export class HomeComponent {
   model=new Employee('uzair','laraib',true,"w2",'default');
   hasPrimaryLanguageError=false;
 
-  ValidatePrimaryLanguage($event){
-    // console.log('lang: ' + this.model.primaryLanguage);
-    if(this.model.primaryLanguage === 'default')
+  ValidatePrimaryLanguage(value){
+     console.log('lang: ' + this.model.primaryLanguage);
+    if(value === 'default')
     this.hasPrimaryLanguageError=true;
     else
     this.hasPrimaryLanguageError=false;

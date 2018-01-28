@@ -17,7 +17,7 @@ export class HomeComponent {
     
   }
   submitForm(form:NgForm){
-console.log(this.model)
+console.log(form.value)
   }
 
   ValidatePrimaryLanguage(value){

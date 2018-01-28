@@ -10,12 +10,7 @@
 First Name Is Required
         </div>
 </div> 
-<button class="btn btn-primary" type="submit"
-[disabled]="form.invalid">Ok</button> 
-
-
-
- <!-- <div class="form-group">
+ <div class="form-group">
         <label>Last Name</label>
     <input type="text" class="form-control" required placeholder="Last Name" name="lastName" 
     [(ngModel)]="model.lastName">
@@ -35,14 +30,14 @@ First Name Is Required
             [(ngModel)]="model.paymentType">
             W2
         </label>
-    </div>.
+    </div>
     <div class="radio">
             <label>
                 <input type="radio" name="paymentType" value="1099" [(ngModel)]="model.paymentType">
                 1099
             </label>
-        </div> -->
-        <!-- <div class="form-group" [class.has-error]="hasPrimaryLanguageError" >
+        </div> 
+        <div class="form-group" [class.has-error]="hasPrimaryLanguageError" >
                 <label>Primary Language</label>
           <select class="form-control" #primaryLanguage name="primaryLangauge" 
           (blur)="ValidatePrimaryLanguage(primaryLanguage.value)"
@@ -53,8 +48,9 @@ First Name Is Required
                 {{lang}}
               </option>
           </select>
-        </div> -->
-        
+        </div> 
+        <button class="btn btn-primary" type="submit"
+[disabled]="form.invalid">Ok</button> 
 </form>
 </div>
 

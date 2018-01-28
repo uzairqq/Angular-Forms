@@ -10,14 +10,10 @@
 First Name Is Required
         </div>
 </div> 
-<button class="btn btn-primary" type="submit">Ok</button> 
+<button class="btn btn-primary" type="submit"
+[disabled]="form.invalid">Ok</button> 
 
-<h4>{{form.pristine}}</h4>
-<h4>{{form.dirty}}</h4>
-<h4>{{form.touched}}</h4>
-<h4>{{form.untouched}}</h4>
-<h4>{{form.valid}}</h4>
-<h4>{{form.isvalid}}</h4>
+
 
  <!-- <div class="form-group">
         <label>Last Name</label>

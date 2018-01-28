@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import { Employee } from '../models/employee.model';
 import { Console } from '@angular/core/src/console';
 import { FormPoster } from '../services/form-poster.service';
-
+import { NgForm } from '@angular/forms/src/directives/ng_form';
 @Component({
   selector: 'home',
   styleUrls: ['./home.component.css'],
@@ -15,6 +15,9 @@ export class HomeComponent {
 
   constructor(private formPoster:FormPoster){
     
+  }
+  submitForm(form:NgForm){
+console.log(this.model)
   }
 
   ValidatePrimaryLanguage(value){
